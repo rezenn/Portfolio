@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgb(222, 174, 111), rgba(242, 212, 172, 0.679), rgb(244, 222, 179));
+    min-height: 100vh;
+    background-size: cover;
+    font-family: 'Courier New', monospace;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: bisque;
+    font-size: 1.3rem;
+
+}
+
+#pages {
+    padding: 0.2em 4.5%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    border-bottom: 1px solid #333;
+
+}
+
+img {
+    border: 1px solid #333;
+    border-radius: 50%;
+
+}
+
+
+#image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+
+
+}
+
+a:hover {
+    color: rgb(169, 21, 21);
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    margin: 0;
+}
+
+.text {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1em;
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+    color: brown;
+    border-right: 4px solid;
+    white-space: nowrap;
+    max-width: 40%;
+    overflow: hidden;
+    animation:
+        typing 6s,
+        cursor 0.6s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+#info {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(192, 81, 81);
+    padding-top: 1.9rem;
+    padding-left: 1.9rem;
+}
+
+#links {
+    padding: 0.8em 4.5%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    bottom: 15px;
+    left: 15px;
+
+}
+
+#contact {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1em;
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    color: brown;
+}
+
+#contactH {
+    text-align: center;
+}
+
+.contactInfo {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2em;
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    color: rgb(192, 81, 81);
+}
+
+#project {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1em;
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    color: brown;
+    text-decoration: underline;
+
+}
+
+.projectT {
+    text-align: center;
+    border: 1.5rem;
+    padding: 0.5rem;
+
+}
+
+.skillProject {
+    width: auto;
+    height: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(192, 81, 81);
+
+}
+
+.about {
+    text-align: center;
+    border: 1rem;
+    padding: 1rem;
+    color: brown;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: brown;
+}
+
+p {
+    font-size: 1rem;
+    text-align: center;
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    color: rgb(192, 81, 81);
+}
+
+#aboutMe {
+    width: auto;
+    height: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(192, 81, 81);
+    padding: 1rem;
+
+}
+
+strong {
+    color: rgb(129, 62, 14);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    background-color: bisque;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
+
+    .text {
+        font-size: 2rem;
+        max-width: 68%;
+    }
+
+    #pages,
+    #links {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+
+    #Education {
+        border-top: 2rem;
+        padding-top: 5rem;
+        color: brown;
+    }
+
+
+}
